@@ -1,0 +1,74 @@
+/* fondo */
+body {
+  font-family: Verdana, sans-serif;
+  font-size: 12px;
+  margin: 20px;
+  background-color: #EDEDED; 
+  color: #000;
+}
+
+/* Encabezado principal */
+h1 {
+  font-family: Arial, sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: darkblue;
+  text-align: center;
+  background-color: white;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin: 20px auto;
+}
+
+/* Estilos del recuadro */
+#recuadro1 {
+  font-size: 14px;
+  color: #74030A;
+  font-family: Arial, Times, sans-serif;
+  border: 3px solid red;      
+  padding: 15px;
+  margin: 20px;                /* espacio alrededor */
+  width: 200px;                /* ancho */
+
+  border-radius: 25px;
+  box-shadow: 2px 2px 5px black;
+  text-align: center;
+  display: block;              /* quitamos flex para que se ajuste al contenido */
+  background-color: #FFC0C0;    /* fondo rojo muy claro */
+}
+
+#recuadro1 ul {
+  list-style-type: disc;      /* todas las viñetas iguales */
+  padding-left: 20px;        
+  margin: 0;
+}
+
+
+
+
+#menu-vertical ul {
+  list-style: none;       /* elimina viñetas predeterminadas */
+  padding: 0;
+  margin: 0;
+}
+
+#menu-vertical li {
+  display: flex;          /* alinea imagen y texto horizontalmente */
+  align-items: center;    /* centra la imagen verticalmente con el texto */
+  gap: 8px;               /* espacio entre la imagen y el texto */
+  margin: 8px 0;          /* espacio entre elementos de la lista */
+  cursor: pointer;        /* mano al pasar el ratón */
+}
+
+#menu-vertical li img {
+  width: 16px;            /* ancho pequeño para logo */
+  height: 16px;           /* altura pequeña para logo */
+}
+
+/* Efecto hover */
+#menu-vertical li:hover {
+  color: white;
+  background-color: red;
+  border-radius: 5px;
+  padding: 5px;
+}

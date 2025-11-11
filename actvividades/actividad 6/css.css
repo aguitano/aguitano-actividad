@@ -1,0 +1,83 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #005000;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 8px 12px;          /* más área clickable */
+    border-radius: 5px;         /* bordes redondeados */
+    display: inline-block;      /* hace que el fondo tenga altura */
+    transition: 0.3s ease;      /* animación suave */
+}
+nav a:hover{
+    background-color: rgba(255, 0, 0, 0.507);
+    color: rgb(0, 4, 255);
+
+}
+
+.container {
+    display: flex;
+    background: #d6e8a9;
+    padding: 20px;
+    flex: 1; /*Esto hace que el contenido empuje al footer */
+}
+
+main {
+    width: 70%;
+    padding-right: 20px;
+}
+
+main h1 {
+    text-align: center;
+}
+
+.box {
+    border: 2px solid #62b4c4;
+    background: white;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.publicidad {
+    width: 30%;
+    border: 2px solid #4b76c3;
+    background: #f5c3e3;
+    padding: 15px;
+}
+
+.publicidad h4 {
+    font-size: 14px;
+}
+
+.publicidad h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.publicidad a {
+    color: #0000ee;
+}
+
+footer {
+    background: #b6e7ff;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    margin-top: auto; /*Esto lo pega al fondo */
+}

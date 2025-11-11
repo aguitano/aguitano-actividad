@@ -1,0 +1,163 @@
+
+/* Colores base */
+:root {
+  --bg: #0f1724; /*color general*/
+  --card: #182234; /*fondo*/
+  --accent: #06b6d4;/*color botones*/
+  --muted: #94a3b8; /*color del texto*/
+  --ok: #10b981; /*para cuando termine y este bien la edad*/
+}
+
+
+/* Reset básico */
+* {/*el asterisco significa seleccionar todos los elementos del documento*/
+  box-sizing: border-box; /*esta parte es importante por que si lo quitamos se superpone todo*/
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--bg); /*usar el color de root*/
+  color: #e6eef6; 
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+header {
+  margin-bottom: 16px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+p.lead {
+  color: var(--muted);
+  margin-bottom: 16px;
+}
+
+/* Tarjeta simple */
+.card {
+  background-color: var(--card);
+  padding: 16px;
+  border-radius: 10px;
+}
+
+/* Formulario */
+form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+/* Etiquetas y campos */
+label {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #2c3a52;
+  background-color: #0b1220;
+  color: #fff;
+}
+
+textarea {
+  min-height: 100px;
+}
+
+/* Grupo de opciones (radio o checkbox) */
+.radios,
+.checkboxes {
+  display: flex;
+  gap: 12px;              /* Espacio entre cada opción */
+  align-items: center;     /* Centra verticalmente */
+  flex-wrap: wrap;         /* Permite que bajen en pantallas pequeñas */
+}
+
+.radios label,
+.checkboxes label {
+  display: flex;
+  align-items: center;
+  gap: 6px;                /* Espacio entre el círculo/cuadro y el texto */
+  font-size: 0.9rem;
+}
+
+/* Botones */
+.actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+button {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button.primary {
+  background-color: var(--accent);
+  color: #052023;
+}
+
+button.ghost {
+  background: transparent;
+  border: 1px solid #2c3a52;
+  color: var(--muted);
+}
+
+/* Mensajes */
+.message {
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.error {
+  background-color: #4b1f1f;
+  color: #fecaca;
+}
+
+.success {
+  background-color: #1f4b3a;
+  color: #bbf7d0;
+}
+
+/* Campo Edad */
+#edad {
+  padding: 8px;
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  width: 100%;
+}
+
+/* Colores según validez */
+#edad:valid {
+  border-color: var(--ok);
+}
+
+#edad:invalid {
+  border-color: #dc2626;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  form {
+    grid-template-columns: 1fr;
+  }
+}

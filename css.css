@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: flex-start; /* Lo coloca arriba */
+  background-color: #111;
+  background-size: 400% 400%;
+  animation: fondoMovil 10s ease infinite;
+  font-family: 'Poppins', sans-serif;
+}
+
+.titulo {
+  margin-top: 60px;
+  font-size: 60px;
+  text-align: center;
+  color: #ff6b6b;
+  text-shadow: 0 0 10px #ff6b6b;
+  animation: colores 4s infinite alternate ease-in-out;
+}
+
+/* Animación combinada: cambia color y brillo */ 
+/* https://es.stackoverflow.com/questions/160753/css-cambio-de-colores-por-intervalos-de-tiempo */
+@keyframes colores {
+  0% {
+    color: #ff6b6b;
+    text-shadow: 0 0 15px #ff6b6b;
+  }
+  25% {
+    color: #feca57;
+    text-shadow: 0 0 20px #feca57;
+  }
+  50% {
+    color: #1dd1a1;
+    text-shadow: 0 0 25px #1dd1a1;
+  }
+  75% {
+    color: #54a0ff;
+    text-shadow: 0 0 30px #54a0ff;
+  }
+  100% {
+    color: #5f27cd;
+    text-shadow: 0 0 35px #5f27cd;
+  }
+}
+
+.enlaces {
+  text-align: left;      /* mantiene los enlaces alineados a la izquierda */
+  margin-top: 150px;     /* espacio desde arriba */
+  margin-left: 50px;     /* mueve los enlaces hacia la derecha desde el borde izquierdo */
+  /* o padding-left: 50px; también funciona */
+}
+
+.enlaces a {
+  display: block;
+  margin-bottom: 15px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.enlaces a:hover {
+  color: #ff6600;
+}

@@ -1,0 +1,212 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #e8ebf9;
+    color: #333;
+    line-height: 1.6;
+}
+.portada {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;   /* se ajusta al tamaño de la pantalla */
+    height: auto;
+}
+.presentacion {
+    padding: 30px;
+    border-radius: 10px;
+    margin: 30px auto;
+    max-width: 1000px;
+}
+
+.presentacion h2 {
+    text-align: center;
+    color: #c00;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+
+.img-izquierda {
+    float: right; /* Imágene flotante izquierda */
+    width: 180px;
+    margin: 10px 15px 10px 0; 
+    border-radius: 8px;
+}
+
+.img-derecha {
+    float: left; /* Imagen flotante derecha */
+    width: 180px;
+    margin: 10px 0 10px 15px; 
+    border-radius: 8px;
+}
+
+.texto {
+    text-align: justify;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Evitar que el siguiente contenido se superponga 
+.presentacion::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+*/
+/* Para que en el movil se vea diferente */
+@media (max-width: 768px) {
+    .img-izquierda,
+    .img-derecha {
+        float: none;
+        display: block;
+        margin: 0 auto 15px;
+        width: 80%;
+    }
+}
+
+
+.caracteristicas {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Recuadro amarillo a la izquierda */
+  margin: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.caracteristicas h3 {
+  font-size: 24px;
+  color: #003366; /* Azul oscuro */
+  margin-bottom: 10px;
+  position: relative;
+  padding-bottom: 10px;
+  width: 100%;
+  text-align: right; /* Título pegado a la derecha */
+}
+
+.caracteristicas h3::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #003366; /* Línea azul oscuro */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.caracteristicas ul {
+  background-color: #fff8c6; /* Fondo amarillo claro */
+  border: 2px dotted #d4af37; /* Borde punteado dorado */
+  padding: 25px;
+  border-radius: 10px;
+  list-style-type: disc;
+  margin-top: 20px;
+  width: 80%;
+  max-width: 700px;
+}
+
+.caracteristicas li {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.presupuesto {
+  padding: 30px;
+  background-color: #f0f0f0; /* Fondo gris claro */
+}
+
+.titulo-linea {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.titulo-linea h2 {
+  font-size: 26px;
+  color: #003366; /* Azul oscuro */
+  margin: 0;
+}
+
+.linea-azul {
+  width: 100px;
+  height: 4px;
+  background-color: #003366; /* Azul oscuro */
+  border: none;
+  margin-top: 5px;
+}
+.presupuesto {
+  padding: 30px;
+  background-color: #e8ebf9; /* Fondo azul claro */
+  text-align: center; /* Centra el contenido */
+}
+
+.precio {
+  text-align: center;
+  font-size: 22px;
+  color: #000000; /* Negro */
+  margin-top: 10px;
+  background-color: #ffffff; /* Fondo blanco */
+  padding: 15px 25px;
+  border-radius: 8px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave */
+}
+
+.cantidad {
+  color: #d00000; /* Rojo intenso */
+  font-weight: bold;
+}
+
+
+
+
+.fotografia {
+  padding: 30px;
+  background-color: #f0f0f0; /* Fondo gris claro */
+}
+
+.titulo-linea {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.titulo-linea h2 {
+  font-size: 26px;
+  color: #003366; /* Azul oscuro */
+  margin: 0;
+}
+
+.linea-azul {
+  width: 100%;
+  height: 4px;
+  background-color: #003366; /* Azul oscuro */
+  border: none;
+  margin-top: 5px;
+}
+
+.imagenes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.imagenes img {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.imagenes img:hover {
+  transform: scale(1.05);
+}
+
+
+
+
+
+
+
